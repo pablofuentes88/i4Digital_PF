@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álbum</title>
+</head>
+<body>
+    <br>
+    <h1>Álbum site</h1>
+    <table class="table">
+        <thead>
+            <th>Autor del Álbum</th>
+            <th>Cover</th>
+            <th>Canciones</th>
+        </thead>
+        <tr ng-repeat="user in allUsers">
+            <td>{{user.name}}</td>
+            <td><img ng-src="https://picsum.photos/300/300?random={{user.id}}" alt=""></td>
+            <td>
+                <ul ng-repeat="album in allAlbums">
+                    <li ng-if="album.userId == user.id">{{album.title}}</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

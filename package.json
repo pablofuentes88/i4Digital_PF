@@ -1,0 +1,12 @@
+{
+    "name": "i4digital",
+    "version": "0.0.1",
+    "description": "Test for work into the company",
+    "main": "server.js",
+    "dependencies": {
+        "express": "~4.x"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.13"
+    }
+}
